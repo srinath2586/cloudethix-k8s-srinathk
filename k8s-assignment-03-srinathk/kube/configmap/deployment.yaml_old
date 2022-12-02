@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-webapp-configmap 
+  labels:
+    app: frontend-webapp-configmap 
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: frontend-webapp-configmap 
+  template:
+    metadata:
+      labels:
+        app: frontend-webapp-configmap 
+    spec:
+      containers:
+      - name: frontend-webapp-configmap 
+        image: srinath2586/cloudethix_configmap_srinathk:docker-sample-nginx-configmap 
+        ports:
+        - containerPort: 80
