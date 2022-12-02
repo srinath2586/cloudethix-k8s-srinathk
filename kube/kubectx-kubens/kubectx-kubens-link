@@ -1,0 +1,3 @@
+1. sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
+2. sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
+3. sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens

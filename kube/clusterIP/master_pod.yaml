@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: master-nginx
+  labels:
+    app: master-nginx 
+spec:
+   containers:
+      - name: master-nginx
+        image: srinath2586/cloudethix_master_nginx_srinathk:nginx-master
+        ports:
+        - containerPort: 80
